@@ -110,6 +110,7 @@ class _CartScreenState extends State<CartScreen> {
             if (productsList.length > 0)
               Flexible(
                   child: Card(
+                    clipBehavior: Clip.hardEdge,
                 child: Padding(
                   padding: EdgeInsets.only(top: 10),
                   child: AnimatedList(
