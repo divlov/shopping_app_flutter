@@ -15,7 +15,7 @@ class AuthProvider with ChangeNotifier {
       String email, String password, String urlSegment) {
     _previousUserId=_userId;
     Uri url = Uri.parse(
-        'https://identitytoolkit.googleapis.com/v1/accounts:$urlSegment?key=AIzaSyBbZNGApW6avSyJQqNs1nEYZDGIDCEuVZw');
+        'https://identitytoolkit.googleapis.com/v1/accounts:$urlSegment?key=/*TODO: insert google api key*/');
     return http
         .post(url,
             body: json.encode({
